@@ -1,0 +1,47 @@
+{
+  "name": "desafio-nodejs-findafriend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "test:create-prisma-environment": "npm link ./prisma/vitest-environment-prisma",
+    "test:install-prisma-environment": "npm link vitest-environment-prisma",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run --dir src/use-cases",
+    "test:watch": "vitest --dir src/use-cases",
+    "pretest:e2e": "run-s test:create-prisma-environment test:install-prisma-environment",
+    "test:e2e": "vitest run --dir src/http",
+    "test:e2e:watch": "vitest --dir src/http",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/node": "^20.3.1",
+    "@types/supertest": "^2.0.12",
+    "@vitest/coverage-v8": "^0.32.2",
+    "npm-run-all": "^4.1.5",
+    "prisma": "^4.15.0",
+    "supertest": "^6.3.3",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.32.1"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/jwt": "^7.1.0",
+    "@fastify/multipart": "^7.7.0",
+    "@fastify/static": "^6.10.2",
+    "@prisma/client": "^4.15.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.1.4",
+    "fastify": "^4.18.0",
+    "zod": "^3.21.4"
+  }
+}
