@@ -33,6 +33,7 @@ API para adoção de Pets (animais de estimação), onde é possível registrar 
 - [Prisma](https://www.prisma.io/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Fastify](https://fastify.dev/)
+- [JWT TOKEN e Refresh Token](https://jwt.io/)
 - [Zod](https://zod.dev/)
 
 ## Executando o projeto
