@@ -102,12 +102,12 @@ Com isso você já deverá estar com o ambiente rodando e pronto para a utiliza�
 http://localhost:3333
 ```
 
-- **rotas POST**
-**CREATE ORGANIZATION (registra uma organização)**
-`POST`
-endpoint: `/organizations`
-Content-Type: `application/json`
-Body: `JSON`
+- **rotas POST**<br />
+**CREATE ORGANIZATION (registra uma organização)**<br />
+`POST`<br />
+endpoint: `/organizations`<br />
+Content-Type: `application/json`<br />
+Body: `JSON`<br />
 Exemplo de entrada de dados:
 ```json
 {
@@ -125,11 +125,11 @@ Exemplo de entrada de dados:
 <br />
 <br />
 
-**AUTHENTICATE ORGANIZATION (gera o token de autenticação para a organização)**
-`POST`
-endpoint: `/session`
-Content-Type: `application/json`
-Body: `JSON`
+**AUTHENTICATE ORGANIZATION (gera o token de autenticação para a organização)**<br />
+`POST`<br />
+endpoint: `/session`<br />
+Content-Type: `application/json`<br />
+Body: `JSON`<br />
 Exemplo de entrada de dados:
 ```json
 {
@@ -140,23 +140,23 @@ Exemplo de entrada de dados:
 <br />
 <br />
 
-**CREATE PET (registra um Pet para uma organização, Obs: a organização precisa estar logada/autenticada)**
-`POST`
-endpoint: `/add_pet`
-Content-Type: `multipart/form-data`
-Body: `Multipart form`
-Authenticate: `bearer token`
+**CREATE PET (registra um Pet para uma organização, Obs: a organização precisa estar logada/autenticada)**<br />
+`POST`<br />
+endpoint: `/add_pet`<br />
+Content-Type: `multipart/form-data`<br />
+Body: `Multipart form`<br />
+Authenticate: `bearer token`<br />
 Exemplo de entrada de dados:
 ![cover](.github/example_input_create_pet.png?style=flat)
 <br />
 <br />
 
-- **rotas PATCH**
-**REFRESH TOKEN (atualiza o token)**
-`PATCH`
-endpoint: `/token/refresh`
-Content-Type: `application/json`
-Body: `JSON`
+- **rotas PATCH**<br />
+**REFRESH TOKEN (atualiza o token)**<br />
+`PATCH`<br />
+endpoint: `/token/refresh`<br />
+Content-Type: `application/json`<br />
+Body: `JSON`<br />
 Exemplo de entrada de dados:
 ```json
 {
@@ -167,23 +167,23 @@ Exemplo de entrada de dados:
 <br />
 <br />
 
-- **rotas GET**
-**ORGANIZATION LOGIN (realiza o login da organização)**
-`GET`
-endpoint: `/organizationLogin`
-Authenticate: `bearer token`
+- **rotas GET**<br />
+**ORGANIZATION LOGIN (realiza o login da organização)**<br />
+`GET`<br />
+endpoint: `/organizationLogin`<br />
+Authenticate: `bearer token`<br />
 <br />
 <br />
 
-**FIND ALL PETS BY CITY (encontra todos os Pets por cidade)**
-`GET`
-endpoint: `/petsByCity/?city=Salto`
+**FIND ALL PETS BY CITY (encontra todos os Pets por cidade)**<br />
+`GET`<br />
+endpoint: `/petsByCity/?city=Salto`<br />
 <br />
 <br />
 
-**FIND ALL PETS BY CITY WITH FILTERS (encontra todos os Pets por cidade(obrigatório), utilizando filtros(opcionais))**
-`GET`
-endpoint: `/petsByCity/?city=Salto&age=Filhote&size_carry=Pequenino&energy_level=Elevada&independence_level=Baixo`
+**FIND ALL PETS BY CITY WITH FILTERS (encontra todos os Pets por cidade(obrigatório), utilizando filtros(opcionais))**<br />
+`GET`<br />
+endpoint: `/petsByCity/?city=Salto&age=Filhote&size_carry=Pequenino&energy_level=Elevada&independence_level=Baixo`<br />
 <br />
 <br />
 
